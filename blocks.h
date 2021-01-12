@@ -11,7 +11,7 @@ static const Block blocks[] = {
 
 	{"Load Avg: ", "cat /proc/loadavg | awk -F ' ' '{print $1}'",					60,		0},
 
-	{"Mic Status: ", "amixer get Capture | rg '[on]' -F -o | head -n1",					1,		0},
+	{"", "~/micmute.sh",					1,		0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
